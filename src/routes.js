@@ -11,7 +11,10 @@ const Routess = () => (
     <BrowserRouter>
         <Routes>
             <Route exact path="/" element={<HomeScreen/>}/>
-            <Route exact path="/lista" element={<ListScreen/>}/>
+            <Route exact path="/em_servico" element={<ListScreen/>}/>
+            <Route exact path="/liberados" element={<ListScreen/>}/>
+            <Route exact path="/retornos" element={<ListScreen/>}/>
+            <Route exact path="/aguardando_liberacao" element={<ListScreen/>}/>
             <Route exact path="/login" element={<LoginScreen/>}/>
             <Route exact path="/cadastrar" element={<RegisterScreen/>}/>
             <Route exact path="/editar" element={<UpdateScreen/>}/>

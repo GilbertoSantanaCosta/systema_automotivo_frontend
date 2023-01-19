@@ -11,8 +11,7 @@ function RegisterForm() {
       const [cpf, setCpf] = useState("");
       const [rg, setRg] = useState("");
       const [workshop, setWorkshop] = useState({
-        id: 0,
-        name: '',
+        id: 1
       });
       const [profile, setProfile] = useState([]);
       const [redirectToLogin, setRedirectToLogin] = useState(false);
@@ -29,6 +28,13 @@ function RegisterForm() {
           setError(true)
         }
       }
+
+     
+
+      const handleWorkshopChange = (e) => setWorkshop({
+        ...workshop,
+        [e.currentTarget.name]: e.currentTarget.value
+        });
 
       if(redirectToLogin === true)
         return <Navigate to={{pathname: "/login"}}/>
@@ -103,11 +109,11 @@ function RegisterForm() {
                   <Label size="small">CNPJ Oficina</Label>
                   <Control>
                     <Input 
-                      type="workshop.id" 
+                      type="workshop" 
                       required
-                      name="workspace.id"
+                      name="workshop"
                       value={workshop.id}
-                      onChange={e => setWorkshop(e.target.value)}
+                      onChange={e => setWorkshop({id: e.target.value})}
                     />
                   </Control>
                 </Field>

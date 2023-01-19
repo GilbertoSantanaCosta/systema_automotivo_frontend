@@ -18,9 +18,9 @@ function Header(){
       <Navbar.Item dropdown>
         <Navbar.Link>Listas</Navbar.Link>
         <Navbar.Dropdown>
-          <Navbar.Item>Veiculos Na Oficina</Navbar.Item>
-          <Navbar.Item>Veiculos Liberados</Navbar.Item>
-          <Navbar.Item>Retornos</Navbar.Item>
+          <Navbar.Item><Link to="/em_servico">Veiculos Na Oficina</Link> </Navbar.Item>
+          <Navbar.Item><Link to="/liberados">Veiculos Liberados</Link></Navbar.Item>
+          <Navbar.Item><Link to="/retornos">Retornos</Link></Navbar.Item>
           <Navbar.Divider />
           <Navbar.Item>Assistencia Tecnica</Navbar.Item>
         </Navbar.Dropdown>
@@ -33,7 +33,7 @@ function Header(){
           <Button color="primary">
            <strong><Link to="/cadastrar">Cadastrar</Link></strong> 
           </Button>
-          <Button color="light">Entrar</Button>
+          <Button color="light"><Link to="/login">Entrar</Link></Button>
         </Button.Group>
       </Navbar.Item>
     </Navbar.Segment>

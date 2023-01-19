@@ -1,7 +1,7 @@
 import { React, Fragment } from "react";
 import { Container, Section, Column, Title, Table } from "rbx"
 import Header from "../../components/header";
-import VeiculosNaOficina from "../../components/auth/listas/recolhidos"
+import VeiculosEmServico from "../../components/auth/listas/recolhidos"
 
 const ListScreen = () => (
 
@@ -12,7 +12,7 @@ const ListScreen = () => (
                 <Column.Group>
                     <Column >
                        
-                        <VeiculosNaOficina/>
+                        <VeiculosEmServico/>
                         
                     </Column>
                 </Column.Group>
