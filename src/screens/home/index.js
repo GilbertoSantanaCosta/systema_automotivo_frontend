@@ -3,6 +3,7 @@ import { Container, Section, Column, Title } from "rbx"
 import Header from "../../components/header";
 import carros from "../../imagens/carros.png"
 import {Link} from "react-router-dom"
+import '../../index.css'
 
 
 function HomeScreen() {

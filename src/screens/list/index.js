@@ -7,7 +7,7 @@ const ListScreen = () => (
 
     <Fragment>
         <Header />
-        <Section size="medium" className="home">
+        <Section  className="home">
             <Container >
                 <Column.Group>
                     <Column >

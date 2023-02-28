@@ -5,7 +5,7 @@ import LoginScreen from "./screens/login"
 import ListScreen from "./screens/list"
 import RegisterScreen from "./screens/register"
 import UpdateScreen from "./screens/update"
-
+import BuscaScreen from "./screens/busca"
 const Routess = () => (
 
     <BrowserRouter>
@@ -18,6 +18,7 @@ const Routess = () => (
             <Route exact path="/login" element={<LoginScreen/>}/>
             <Route exact path="/cadastrar" element={<RegisterScreen/>}/>
             <Route exact path="/editar" element={<UpdateScreen/>}/>
+            <Route exact path="/busca" element={<BuscaScreen/>}/>
         </Routes>
     </BrowserRouter>
 )
